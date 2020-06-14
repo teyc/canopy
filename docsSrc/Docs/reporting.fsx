@@ -31,6 +31,9 @@ open configuration
 open reporters
 reporter <- new reporters.LiveHtmlReporter(BrowserStartMode.Chrome, "driver path") :> IReporter
 
+// Live HTML Reporter requires a context
+context "Default test context"
+
 (**
 <img src="img/livehtmlreport.png" alt="Live HTML Reporter" style="display: inherit;"/>
 
